@@ -78,8 +78,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="header-text">
-            <h2>About Us</h2>
+          <div class="header-text"> 
+            <h2>Vision Mission</h2>
             <div class="div-dec"></div>
           </div>
         </div>
@@ -87,28 +87,30 @@
     </div>
   </div>
 
-  <!-- ***** Main Banner Area End ***** -->
-
- 
-
-
-
-   <section class="services" id="services">
+  
+ <section class="about-us" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="service-item">
-            <h4>About Koru Machine</h4>
-            <p>Founded in Sakarya in 1997, KORU MAKİNA is a leading machinery manufacturer offering innovative solutions for the milk and dairy products processing industry <br><p>The company is managed by Kayra Yiğit Koru.</p>
-            </div>
-
+          <div class="section-heading">
+          
+            <h6>Koru Machine</h6>
+              <h2>Vision</h2>
+             <p>To be the leading brand in the food industry by offering world-class hygiene, technology and efficiency in ayran and fruit juice storage solutions,</p>
+             
+  
+          </div>
+           <div class="section-heading">
+          
+              <h6> Koru Machine</h6>
+               <h2>Mission</h2>
+             <p>To provide ayran and fruit juice producers with long-lasting and efficient storage solutions that comply with food safety standards, always prioritizing customer satisfaction, sustainable production and innovative technologies. </p> 
+    </div>
         </div>
-    </div>
-    </div>
-    </section>
+     </div>
+  </section>
 
-
-  <section class="partners">
+  </section>
+<section class="partners"><section class="partners">
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-sm-4 col-6">
@@ -201,110 +203,4 @@
   <script src="assets/js/swiper.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
-</html>
-
-  <footer>
-       <div class="container">
-      <div class="row">
-     <section class="map">
-    <div class="container">
-      <div class="row">
-    
-        <div class="col-lg-10 offset-lg-1">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="info-item">
-                <i class="fa fa-envelope"></i>
-                <h4>Email Address</h4>
-                <a href="#">makinakoru@gmail.com</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item">
-                <i class="fa fa-phone"></i>
-                <h4>Tel</h4>
-                <a href="#">0 264 275 00 38 <br> 0 534 359 71 01</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item">
-                <i class="fa fa-map-marked-alt"></i>
-                <h4>Address</h4>
-                <a href="#">Erenler  Mah. 1286 Sok. Güney Mobilyacılar San. Sitesi No: 51 Erenler/Sakarya</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-      </div>
-    </div><br><br><br><br>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2025 Koru Makina All Rights Reserved. 
-          
-          <br>Design <a title="CSS Templates" rel="sponsored" href="https://#" target="_blank">ASSA</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-        var interleaveOffset = 0.5;
-
-      var swiperOptions = {
-        loop: true,
-        speed: 1000,
-        grabCursor: true,
-        watchSlidesProgress: true,
-        mousewheelControl: true,
-        keyboardControl: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        on: {
-          progress: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              var slideProgress = swiper.slides[i].progress;
-              var innerOffset = swiper.width * interleaveOffset;
-              var innerTranslate = slideProgress * innerOffset;
-              swiper.slides[i].querySelector(".slide-inner").style.transform =
-                "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
-          },
-          touchStart: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = "";
-            }
-          },
-          setTransition: function(speed) {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = speed + "ms";
-              swiper.slides[i].querySelector(".slide-inner").style.transition =
-                speed + "ms";
-            }
-          }
-        }
-      };
-
-      var swiper = new Swiper(".swiper-container", swiperOptions);
-    </script>
-  </body>
 </html>
